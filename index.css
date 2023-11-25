@@ -1,0 +1,292 @@
+/* 공통요소 */
+* {
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-family: 'Hahmlet', cursive;
+}
+
+#index_bg {
+  width: 100%;
+  height: 100vh;
+}
+
+/* header */
+.head {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 50px;
+  font-size: 40px;
+  line-height: 50px; /* 추가된 줄 간격 설정 */
+}
+
+/* nav */
+/* nav */
+.nav {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  line-height: 50px;
+  padding: 8px;
+  text-align: center;
+}
+
+.nav > li {
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.nav > li > a {
+  color: black;
+  font-size: 25px;
+  margin-right: 15px;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center; /* 가운데 정렬을 위한 추가 */
+}
+
+.menu-item {
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item:hover a {
+  color: white;
+}
+
+/* section */
+.intro_text {
+  position: absolute;
+  top: 35%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  color: rgb(86, 14, 14);
+}
+
+#tit {
+  font-weight: bolder;
+  color: black;
+  transition: text-shadow 0.5s ease;
+  font-weight: bold;
+  font-size: 66px;
+}
+
+#web {
+  font-family: 'YourWebFontName', sans-serif;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* #game_start_BT */
+#game_start_BT {
+  color: white;
+  position: absolute;
+  top: 50px; /* nav 아래에 위치하도록 수정 */
+  left: 12%;
+  transform: translate(-40%, 0%); /* 수정된 transform 값 */
+  width: 24%;
+  font-size: 50px; /* 글자 크기 조절 */
+  background-color: rgba(197, 197, 8, 0.7);
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+
+  border: none;
+}
+
+/* dream */
+
+#dre {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.character {
+  background: rgb(232, 230, 124);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* 자식 요소들을 여러 행으로 감쌀 수 있도록 설정 */
+  justify-content: center; /* 가로 방향에서 가운데 정렬 */
+}
+
+.character-box {
+  background: white;
+  padding: 40px; /* 패딩을 크게 조절하여 가격을 더 크게 표시합니다. */
+  margin: 20px;
+  text-align: center;
+  max-width: 500px; /* 최대 너비를 더 크게 조절합니다. */
+  max-height: 450px;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.character-box2 {
+  background: white;
+  padding: 40px; /* 패딩을 크게 조절하여 가격을 더 크게 표시합니다. */
+  margin: 20px;
+  text-align: center;
+  max-width: 540px; /* 최대 너비를 더 크게 조절합니다. */
+  max-height: 450px;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.ch {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Enemy */
+.enemy {
+  background: rgb(117, 65, 37);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* 자식 요소들을 여러 행으로 감쌀 수 있도록 설정 */
+  justify-content: center; /* 가로 방향에서 가운데 정렬 */
+}
+
+#enemyTitle {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.enemy-box {
+  background: white;
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+  width: 150px; /* 고정된 가로 크기를 지정 */
+  font-size: 20px;
+}
+
+.enemy-box2 {
+  background: white;
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+  width: 230px; /* 고정된 가로 크기를 지정 */
+  font-size: 20px;
+}
+
+/* contact */
+.contact {
+  background: rgb(209, 209, 74);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* 자식 요소들을 여러 행으로 감쌀 수 있도록 설정 */
+  justify-content: center; /* 가로 방향에서 가운데 정렬 */
+}
+
+#con {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contact_text > h1 {
+  padding-top: 90px;
+  text-align: center;
+  color: white;
+}
+
+.sub_text2 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#gma {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 14px;
+}
+
+#ins {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 24px;
+}
+
+#lin {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 10px;
+}
+
+.cont_icons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 980px;
+
+  margin: auto;
+}
+
+.cont_icons > li {
+  flex: 1;
+  text-align: center;
+}
+
+.cont_icons > li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.cont_icons > li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.cont_icons .contents2 {
+  width: 300px;
+  margin: auto;
+  letter-spacing: -1px;
+}
+
+.cont_font {
+  color: black;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.cont_text > a {
+  color: black;
+  font-size: 15px;
+}
+
+.address {
+  color: red;
+  font-size: 13px;
+}
+
+.cont_text .adr:hover {
+  color: red;
+}

@@ -1,0 +1,166 @@
+/* 공통요소 */
+* {
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-family: 'Hahmlet', cursive;
+}
+
+@font-face {
+  font-family: 'Hahmlet';
+  src: url('fonts/Hahmlet-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+/* background-video */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#background-video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.intro_bg {
+  background-image: url('image/intro.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 97vh;
+  margin: 0;
+}
+
+#game_start_BT {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 20%;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(50, 50, 0, 0.6);
+  cursor: pointer;
+}
+
+#game_exit_BT {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 300%);
+  width: 20%;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(50, 50, 0, 0.6);
+  cursor: pointer;
+}
+
+#musicOn_BT {
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 90%;
+  transform: translate(-50%, 300%);
+  width: 14%;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(50, 50, 0, 0.6);
+  cursor: pointer;
+}
+
+#musicOff_BT {
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 90%;
+  transform: translate(-50%, 300%);
+  width: 14%;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(50, 50, 0, 0.6);
+  cursor: pointer;
+}
+
+.name1,
+.phone1 {
+  margin: 5px 0;
+  color: white;
+  transform: rotate(0deg);
+}
+
+/* section */
+.intro_text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+#tit {
+  font-weight: bolder;
+  color: white;
+  transition: text-shadow 0.5s ease;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+#web {
+  font-family: 'YourWebFontName', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+/* js 이름 반짝이게 */
+.slideshow {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.active {
+  opacity: 1;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 10;
+  right: 0;
+  display: flex;
+}
+
+footer .body {
+  color: #fff;
+}

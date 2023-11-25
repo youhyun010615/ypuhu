@@ -1,0 +1,77 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  font-family: 'Hahmlet', cursive;
+}
+
+@font-face {
+  font-family: 'Hahmlet';
+  src: url('fonts/Hahmlet-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+/*prologue html*/
+* body {
+  background-color: black;
+}
+
+#prologue_text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
+
+#prologue_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center;
+}
+
+#prologue_video video {
+  width: 100%;
+  height: auto;
+}
+
+#back_button {
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  transform: translate(-50%, 100%);
+  width: 7%;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(50, 50, 0, 0.6);
+  cursor: pointer;
+}
+
+#skip_button {
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 85%;
+  transform: translate(-50%, 100%);
+  width: 7%;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(50, 50, 0, 0.6);
+  cursor: pointer;
+}
